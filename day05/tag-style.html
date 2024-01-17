@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일시트</title>
+    <!-- reset은 무조건 위쪽에 작성해야함. -->
+    <!-- 방법 1 -->
+    <link rel="stylesheet" href="../reset.css">
+    <!-- 방법 2 -->
+    <style>
+        /* ctrl+엔터 다음줄로 넘어감. */
+        /* * {
+            margin: 0; 
+            padding: 0;
+        } */
+        /*  스타일에 바디 속성을 넣는 것은 테마속성에 가까운 작성. */
+        body {
+            /* 배경색과 글씨색 */
+            background: #000000; 
+            color: white;
+            font-family: 돋움;
+
+            /* 아래 두 가지의 속성은 실제로는 body에 넣으면 안되는 속성 */
+            font-size: 12px;
+            line-height: 30px;
+        }    
+        
+    </style>
+</head>
+<body>
+    <h4>Artwork Concept Drawing</h4>
+    <h1>아트웍 컨셉드로잉</h1>
+    <p>편집 포트폴리오에 포함될 수 있는 북커버 및 동화책 삽화 제작</p>
+</body>
+</html>
