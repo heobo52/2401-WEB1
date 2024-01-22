@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* flex 속성 */
+        /* float보다 더 발전된 형태의 배치 속성 */
+        /* 자식 요소들을 일렬로 정렬해주는 속성 */
+        /* 강력한 부가기능들이 많기 때문에 익술해지면 정말 편한 속성 */
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            display: flex;
+            padding: 12px;
+            background-color: pink;
+            margin-bottom: 8px;
+
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .test1 {
+            height: 500px;
+            /* 흐름 방향 정렬 */
+            justify-content: flex-end;
+            /* justify-content: flex-start(흐름시작쪽으로/기본값)
+            center(흐름중앙)
+            flex-end(흐름끝쪽)방향 설정 가능 */
+            /* space-between:
+            첫번째 개체와 마지막 개체를 양 끝에 붙고 나머지 개체는 동일한 여백으로 배치*/
+            /* 부모 가로가 1000일때,100짜리 박스가 4개 있다고 한다면
+            (1000(부모가로)-400(컨텐츠총가로))/3(여백갯수) = 200(여백크기) */
+
+            /* 밑에 두개는 잘 사용 안함. */
+            /* space-around: 모든 개체에 양쪽에 여백을 동일하게 나눠주는 방식 */
+            /* space-evenly: 모든 여백을 동일한 크기로 설정 */
+
+            /* 흐름 수직방향 정렬 */
+            align-items: conter;
+            /* flex-stert(기본값), center, flex-end 사용가능 */
+        }
+    </style>
+</head>
+<body>
+    <!-- div.container>div.red.box+div.green.box -->
+    <div class="container">
+        <div class="red box"></div>
+        <div class="green box"></div>
+    </div>
+
+    <div class="container test1">
+        <div class="red box"></div>
+        <div class="green box"></div>
+    </div>
+
+    
+
+</body>
+</html>
