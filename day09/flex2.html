@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../readme.txt">
+    <style>
+        /* flex는 부모 태그보다 넘치지 않도록 수축시키기 때문에 유연함. */
+        /* 부모태그의 크기에서 여백을 뺀 후 컨텐츠를 각 100으로 만들어 넘치지 않게 함. */
+        /* 비율에 맞게 자동으로 크기를 자동으로 줄여줌. */
+        .flex-box {
+            display: flex;
+        }
+
+        .box100 {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box50 {
+            width: 50%;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .box10 {
+            width: 10%;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .flex-box2 {
+            display: flex;
+            gap: 12px;
+            /* gap은 컨텐츠 사이사이에 여백을 생성해줌. */
+            width: 1200px;
+        background-color: black;
+        }
+
+        .float-box {
+        clear: both;
+        width: 1200px;   
+        height: 100px;    
+        /* overflow: hidden; = height: 100px;*/
+        background-color: black;
+    }
+
+        .float-5div {
+            width: 230.4px;
+            height: 100px;
+            margin-right: 12px;
+            float: left;
+            background-color: green;
+        }
+
+        .no-margin {
+            margin: 0;        
+        }
+
+        .flex-box-wrap {
+            width: 1216px;
+            display: flex;
+            gap: 8px;
+
+            /* 넘치는 컨텐츠 줄이는 대신 줄바꿈하기 */
+            flex-wrap: wrap;
+        }
+
+        .product {
+            /* 고정값으로 작성할 경우 부모 컨텐츠의 크기가 변경되었을 경우 */
+            /* 망가지기 쉽다 */
+            /* width: 400px; */
+            /* 계산식 / 연산 기호 띄어쓰기 해야함./엑셀의 함수수식과 비슷 */
+            width: calc((100% - (8px * 2)) / 3);
+            height: 100px;
+            background-color: pink;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-box">
+        <div class="box100"></div>
+        <div class="box50"></div>
+        <div class="box10"></div>
+    </div>
+
+    <div class="flex-box2">
+        <div class="box100"></div>
+        <div class="box100"></div>
+        <div class="box100"></div>
+        <div class="box100"></div>
+        <div class="box100"></div>
+    </div>
+
+   <div class="float-box">
+    <div class="float-5div"></div>
+    <div class="float-5div"></div>
+    <div class="float-5div"></div>
+    <div class="float-5div"></div>
+    <div class="float-5div no-margin"></div>
+   </div>
+
+   <div class="flex-box-wrap">
+    <div class="product">1</div>
+    <div class="product">2</div>
+    <div class="product">3</div>
+    <div class="product">4</div>
+    <div class="product">5</div>
+    <div class="product">6</div>
+   </di>
+</bod>
+</htm>
