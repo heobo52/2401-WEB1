@@ -10,10 +10,6 @@
             padding: 0;
         }
 
-        .container {
-            display: flex;
-        }
-
         .container-box {
             width: 800px;
             margin: 10px;
@@ -21,10 +17,6 @@
             background-color: gray;
             border-radius: 50px;    
         }
-
-          .menu-top {
-            display: flex;
-                  }
 
           .menu-top2 {
             display: flex;
@@ -35,29 +27,31 @@
           } 
 
           .menu-box {
-                width: 65.45px;
-                height:65.45px;
+            /* (800-(10*10) /11*/
+                width: 63.63px;
+                height:63.63px;
                 background-color: gray;
                 border-radius: 35%;
             }
 
-          .service-name-box {
-            width: 800px
-            margin : 10px;
-            display: flex;
-            
-        }
+            .service-name-box {
+                width: 800px;
+                margin: 10px;
+                line-height: 20px;
+                display: flex;
+                justify-content: space-around;
+            }
 
           .service-name {
             font-size: 20px;
             font-weight: bold;
-       }
+        }
           
-
-
     </style>
+
 </head>
 <body>
+    
     <div class="container">
         <div class="container-box"></div>
     </div>
@@ -77,18 +71,17 @@
         </ul>
     </div>
     <div class="service-name-box">
-        <p class="service-name">메일</p>
-        <p class="service-name">블로그</p>
-        <p class="service-name">카페</p>
-        <p class="service-name">쇼핑</p>
-        <p class="service-name">뉴스</p>
-        <p class="service-name">증권</p>
-        <p class="service-name">부동산</p>
-        <p class="service-name">지도</p>
-        <p class="service-name">웹툰</p>
-        <p class="service-name">치지직</p>
-        <p class="service-name">버튼</p>
+        <span class="service-name">메일</span>
+        <span class="service-name">블로그</span>
+        <span class="service-name">카페</span>
+        <span class="service-name">쇼핑</span>
+        <span class="service-name">뉴스</span>
+        <span class="service-name">증권</span>
+        <span class="service-name">부동산</span>
+        <span class="service-name">지도</span>
+        <span class="service-name">웹툰</span>
+        <span class="service-name">치지직</span>
+        <span class="service-name">버튼</span>
     </div>
-    
 </body>
 </html>
