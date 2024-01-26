@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    * => 전체 선택자(애스터리스크=별표), 곱하기라는 뜻도 있지만, 이름적인 관점에서는 모든 것을 뜻함 / 모든 태그에 적용하겠다는 말과 같음.
+    tag id class 선택자 -> 앞에 내용 참조
+    
+    .container.contents
+    <div class="container contents">여기에 적용</div>
+    
+    .container .contents => 띄어쓰기로 인해 모든 contants에 적용 가능
+    <div class="container">
+        <div class="contents">적용됨</div>
+        <div class="inner">
+            <div class="contents">적용됨</div>
+        </div>
+    </div>
+
+    .container > .contents => 꺽쇠를 적용하면 직계 후손에게만 contants 적용
+    <div class="container">
+        <div class="contents">적용됨</div>
+        <div class="inner">
+            <div class="contents">적용 안됨</div>
+        </div>
+    </div>
+
+    .container, .contents
+    <div class="container">여기에 적용</div>
+    <div class="contents">여기에 적용</div>
+</body>
+</html>
