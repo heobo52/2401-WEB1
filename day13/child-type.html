@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="부모">
+    <div class="변호사"></div>
+    <div class="검사"></div>
+    </div>
+
+    <!-- css -->
+    .변호사: first-child - 적용O
+    .검사: first-child - 적용X
+    .변호사: first-of-type - 적용O
+    .검사: first-of-type - 적용O
+
+    <div class="container">
+        <p></p>
+        <p></p>
+        <span></span>
+        <p></p>
+        <p></p>
+        <span></span>
+    </div>
+
+    .p:first-child : 1
+    .span:first-child : x
+    .p: last-child : x
+    .span: last-child : 2
+    .spans: first-of-type :3
+    .p:nth=xh
+</body>
+</html>
