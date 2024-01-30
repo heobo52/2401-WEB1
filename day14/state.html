@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            margin: 12px;
+            width: 200px;
+            height: 20px;
+            display: flex;
+            border-radius: 20px;
+            padding: 4px 12px;
+        }
+
+        input:enabled {
+            border: 2px solid pink;
+        }
+
+        input:disabled {
+            border: 2px solid darkslateblue;
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="text" disabled>
+    <!-- 비활성화 되었을 때 나타는 속성 disabled / 변화하는 디자인 속성 / css 미리 지정해두고 나중에 적용할 수 있음. -->
+</body>
+</html>
