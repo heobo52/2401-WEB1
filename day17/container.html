@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        section {
+            padding: 0px 32px;
+        }
+
+        .section-container {
+            border: 1px solid #222;
+            max-width: 1302px;
+            /* ↑ width: 100%는 기본값을 있다 */
+            /* max-width는 제약을 걸어주는 속성 */
+            /* 이렇게 작성하면 부모가 1032px보다 클때 1302px, */
+            /* 그보다 작을때는 부모의 크기를 100%로 따라간다 */
+            margin: 0 auto;
+            /* ↑ 상,하의 값을 0으로 설정하고 좌우는 auto(오토로 설정하게 되면 자동으로 나눠서 여백을 줌)로 설정한다는 의미*/
+            /* 컨테이너에 주로 사용하고 구조를 짤 때 flex(컨텐츠에 주로 사용)를 사용하는 것보다 margin:0,auto를 사용하는게 좋음. */
+        
+        }
+
+        @media screen and (max-width:799px) {
+            section {
+                padding: 0 16px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="section-container">
+            <div class="test">
+                <h2>제목</h2>
+                <p>내용</p>
+                <img src="../img/이미지1.jpg" alt="이미지">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
