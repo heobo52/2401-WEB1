@@ -10,40 +10,72 @@
             padding: 0;
         }
 
-        .container {
-            background-image: url(img/main_visual_fullscreen.jpg);
-            width: max-content;
+        img {
+            display: block;
+            width: 100%;
         }
 
-        
+        .hambarger {
+            display: flex;
+            width: 100%;
+            padding: 10px
+        }
+
+        .hambarger-log-socar {
+            
+        }
+
+        .hambarger-log-menu {
+
+        }
+
+        section {
+            padding: 40px 32px;
+            
+        }
+
+        .section-container {
+            max-width: 1302px;
+            margin: 0 auto;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            display: block;
+            text-decoration: 30px solid white;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <div class="hambarger">
-            <h1>socar</h1>
+            <div class="hambarger-log-socar">
+                <img src="" alt="socar log">
+            </div>
+            <div class="hambarger-log-menu">
+                <img src="" alt="menu lpg">
+            </div>
         </div>
     </header>
     <main>
-        <div class="container">
-            <img src="img/main_visual_fullscreen.jpg" alt="img">
+        <div class="main-container">
             <p>차가 필요한 <br> 모든 순간, 쏘카</p>
+            <img src="img/main_visual_fullscreen.jpg" alt="img">
         </div>
     </main>
     <section>
         <div class="section-container">
-            <div class="aaa"></div>
-            <img src="img/usp_a.jpg" alt="section-img">
+            <div class="section-container-img">
             <h2>24시간 언제나</h2>
             <p>한밤중이나 주말에도 스마트폰으로 <br> 시간에 구애받지 않고 <br> 쏘카와 함께 이동하세요</p>
+            <img src="img/usp_a.jpg" alt="section-img">
+            </div>
         </div>
-        </div>
     </section>
-    <section>
-    </section>
-    <section>
-    </section>
-    <footer>
-    </footer>
 </body>
 </html>
