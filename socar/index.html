@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,80 +15,123 @@
             width: 100%;
         }
 
-        header {
+        .header-log {
             display: flex;
             padding: 12px;
-        }
-
-        .hambarger {
-            display: block;  
             justify-content: space-between;
+            align-items: center;
         }
 
-        .hambarger-log {
+        .header-log a {
+            text-decoration: none;
+            color: black;
+        }
 
+        .main-container {
+            max-width: 100%;
+            margin: 0 auto;
+                }
+
+        .main-content {
+            background-image: url(img/main_visual_fullscreen.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .main-content-text p {
+            font-size: 56px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
         }
 
         section {
-            padding: 40px 32px;
-        }
-
-        .section-container {
-            max-width: 1302px;
-            margin: 0 auto
-        }
-
-        main {
-            padding: 40px 0;
-        }
-
-       .main-container {
-        max-width: 100%;
-        margin: 0 auto;
-       }
-
-        .main-content {
-            background-image:url(img/main_visual_fullscreen.jpg);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            height: 1000px;
-
-                }
-
-        .main-content-text {
+            padding: 0 50px;
+            box-sizing: border-box;
             display: flex;
-            text-decoration: 30px solid white;
+            justify-content: center;
+            align-items: center;
         }
 
+        .section-content {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .section-content h2 {
+            font-size: 30px;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .section-content h2::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -16px;
+            border-radius: 50%;
+            bottom: 3px;
+            width: 10px;
+            height: 10px;
+            background-color: #0bb8ff;
+        }
+
+        .section-content p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #aaa;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .section-content img {
+            margin: 50px 0;
+        }
+
+        @media screen and (max-width:799px) {
+            section {
+                padding: 0 16px;
+            }
+            
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="hambarger">
-            <div class="hambarger-log">
-                <a href="#"><img src="" alt="socar"></a>
-                <a href="#"><img src="" alt="menu"></a>
-            </div>
+        <div class="header-log">
+            <a href="#"><img src="" alt="socar"></a>
+            <a href="#"><img src="" alt="menu"></a>
         </div>
-</header>
+    </header>
     <main>
         <div class="main-container">
-        <div class="main-content">
+            <div class="main-content">
             <div class="main-content-text">
-            <p>차가 필요한</p>
-            <p>모든 순간, 쏘카</p>
+                <p>차가 필요한<br>모든 순간, 쏘카</p>
             </div>
         </div>
         </div>
     </main>
     <section>
         <div class="section-container">
-            <div class="section-container-img">
-            <h2>24시간 언제나</h2>
-            <p>한밤중이나 주말에도 스마트폰으로 <br> 시간에 구애받지 않고 <br> 쏘카와 함께 이동하세요</p>
-            <img src="img/usp_a.jpg" alt="section-img">
+            <div class="section-content">
+                <h2>24시간 언제나</h2>
+                <p>한밤중이나 주말에도 스마트폰으로<br>시간에 구애받지 않고<br>쏘카와 함께 이동하세요.</p>
+                <img src="img/usp_a.jpg" alt="이미지">
             </div>
         </div>
     </section>
+    
 </body>
 </html>
