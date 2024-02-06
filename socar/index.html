@@ -15,37 +15,48 @@
             width: 100%;
         }
 
-        .hambarger {
+        header {
             display: flex;
-            width: 100%;
-            padding: 10px
+            padding: 12px;
         }
 
-        .hambarger-log-socar {
-            
+        .hambarger {
+            display: block;  
+            justify-content: space-between;
         }
 
-        .hambarger-log-menu {
+        .hambarger-log {
 
         }
 
         section {
             padding: 40px 32px;
-            
         }
 
         .section-container {
             max-width: 1302px;
-            margin: 0 auto;
+            margin: 0 auto
         }
 
-        .main-container {
+        main {
+            padding: 40px 0;
+        }
+
+       .main-container {
+        max-width: 100%;
+        margin: 0 auto;
+       }
+
+        .main-content {
+            background-image:url(img/main_visual_fullscreen.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 1000px;
+
+                }
+
+        .main-content-text {
             display: flex;
-            flex-direction: column;
-        }
-
-        p {
-            display: block;
             text-decoration: 30px solid white;
         }
 
@@ -54,18 +65,20 @@
 <body>
     <header>
         <div class="hambarger">
-            <div class="hambarger-log-socar">
-                <img src="" alt="socar log">
-            </div>
-            <div class="hambarger-log-menu">
-                <img src="" alt="menu lpg">
+            <div class="hambarger-log">
+                <a href="#"><img src="" alt="socar"></a>
+                <a href="#"><img src="" alt="menu"></a>
             </div>
         </div>
-    </header>
+</header>
     <main>
         <div class="main-container">
-            <p>차가 필요한 <br> 모든 순간, 쏘카</p>
-            <img src="img/main_visual_fullscreen.jpg" alt="img">
+        <div class="main-content">
+            <div class="main-content-text">
+            <p>차가 필요한</p>
+            <p>모든 순간, 쏘카</p>
+            </div>
+        </div>
         </div>
     </main>
     <section>
