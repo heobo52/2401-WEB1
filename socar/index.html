@@ -17,7 +17,8 @@
 
         .header-log {
             display: flex;
-            padding: 12px;
+            padding: 12px; 
+            /* padding은 헤더에 넣는게 더 좋은 방법 */
             justify-content: space-between;
             align-items: center;
         }
@@ -36,16 +37,18 @@
             background-image: url(img/main_visual_fullscreen.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
             width: 100%;
-            position: relative;
+            background-position-x: 25%;
         }
 
         .main-content {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 50px;
+            /* margin-bottom: 50px; */
         }
         .main-content-text p {
             font-size: 56px;
@@ -63,8 +66,9 @@
         }
 
         .section-content {
-            max-width: 100%;
+            max-width: 800px%;
             margin: 0 auto;
+            padding-top: 50px;
         }
 
         .section-content h2 {
@@ -110,6 +114,7 @@
 <body>
     <header>
         <div class="header-log">
+            <!-- div는 없어도 됨 a태그에 클래스를 주는걸로 -->
             <a href="#"><img src="" alt="socar"></a>
             <a href="#"><img src="" alt="menu"></a>
         </div>
@@ -128,7 +133,10 @@
             <div class="section-content">
                 <h2>24시간 언제나</h2>
                 <p>한밤중이나 주말에도 스마트폰으로<br>시간에 구애받지 않고<br>쏘카와 함께 이동하세요.</p>
+                
+                <div class="content-img">
                 <img src="img/usp_a.jpg" alt="이미지">
+                </div>
             </div>
         </div>
     </section>
